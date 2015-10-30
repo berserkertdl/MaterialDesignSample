@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.md.activities.RecyclerListDetailActivity"
+    tools:showIn="@layout/activity_recycler_list_detail">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/recycler_activity_detail_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/row_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/row_name"
+                layout="@layout/row_detailiconview" />
+
+            <include
+                android:id="@+id/row_package_name"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_activity"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_component_info"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_version"
+                layout="@layout/row_detailview" />
+
+            <include
+                android:id="@+id/row_moments"
+                layout="@layout/row_detailview" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components>
+
+    <activity>
+        <title>ScrollingActivity</title>
+        <actionName>com.md.activities.ScrollingActivity</actionName>
+    </activity>
+
+    <activity>
+        <title>TabActivity</title>
+        <actionName>com.md.activities.TabActivity</actionName>
+    </activity>
+
+
+    <activity>
+        <title>RecyclerListActivity</title>
+        <actionName>com.md.activities.RecyclerListActivity</actionName>
+    </activity>
+
+
+
+
+</components>
